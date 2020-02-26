@@ -39,4 +39,4 @@ A page that when you choose a genre, all the movies from that genre are listed
 Move your routes to controllers
 See if you can manually put a poster into your assets and add it to your database to render as an image on your ejs pages
 Add CSS
-create validation middleware of your own for inputs
+create validation middleware of your own for input

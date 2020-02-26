@@ -7,24 +7,14 @@ dotenv
 
 
 *** routes
-/movies/getallmovies
-/movies/addmovie
+/movies/ = list all movies
+/movies/addmovie = add a movie to the DB
 /movies/:title - update a movie
 /movies/:title - delete a movie
 
 
 *** model inputs
-title: { type: String, unique: true, default: '' },
-rating: { type: String, default: ''},
-synopsis: { type: String, default: '', trim: true },
-releaseYear: { type: String, default: '' },
-genre: { type: String, default: '' },
-director: { type: String, default: '' },
-boxOffice: {type: String, default: ''}
+title, rating, synopsis, release year, genre, director, box office
 
 
-     <% if(movies) { for(let movie in movies) { %>
-           <h2><%= `${movies}` %>:</h2>
-           <p> <%= movies[movie].title %> </p>
-           <hr/>
-        <% }} %>
+     
