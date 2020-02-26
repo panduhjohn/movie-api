@@ -8,5 +8,20 @@ body {
 
 a {
     color: #00b7ff;
+    text-decoration: none;
+}
+a:hover {
+    color: red;
 }
 
+p {
+    color: white;
+}
+
+h1 {
+    color:white;
+}
+
+label {
+    color: white;
+}
