@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Movies</title>
+    </head>
+    <body>
+        <h1>Movies</h1>
+        <% if(movies) { %> <% movies.forEach((movie) => { %>
+            <p>Title: <%= movie.title %></p>
+            <p>Rating: <%= movie.rating %></p>
+            <p>Synopsis: <%= movie.synopsis %></p>
+            <p>Release Year: <%= movie.releaseYear %></p>
+            <p>Genre: <%= movie.genre %></p>
+            <p>Director: <%= movie.director %></p>
+            <p>Box Office: <%= movie.boxOffice %></p>
+        <hr />
+        <% }) %> 
+        <% } %>
+    </body>
+</html>
