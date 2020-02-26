@@ -8,7 +8,7 @@ const mongoose = require('mongoose')
 
 require('dotenv').config()
 
-const usersRouter = require('./routes/users');
+const indexRouter = require('./routes/index');
 const moviesRouter = require('./routes/movies');
 
 const app = express();
@@ -35,7 +35,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/users', usersRouter);
+app.use('/', indexRouter);
 app.use('/movies', moviesRouter);
 
 // catch 404 and forward to error handler

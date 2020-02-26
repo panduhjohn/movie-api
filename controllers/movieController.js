@@ -1,11 +1,9 @@
-const express = require('express')
-const router = express.Router()
+// const express = require('express')
+// const router = express.Router()
 
 const Movies = require('../models/Movies')
 
 module.exports = {
-
-    
     getAllMovies: (req, res) => {
         Movies.find({})
             .then(movies => {
@@ -44,7 +42,7 @@ module.exports = {
         }
 
         //check to see if word is unique
-        // use the word model and the .findOne mongoose method to compare word in the DB to the input word (req.body.word)
+        // use the word model and the .findOne mongoose method to compare movie in the DB to the searchbox 
         Movies.findOne({ title: title })
             .then(movie => {
                 //if the movie is found return the message "movie is already listed in DB"
